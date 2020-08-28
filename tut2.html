@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" width="device-width" initial scale="1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -25,32 +25,33 @@
             </ul>
         </nav>
     </div>
-    <section class="container-fluid bg-dark">
-        <aside class="bg-dark">
-            <p>"The streamline icon set saves me time and makes my designs more polished and more user friendly. It is worth every penny.”</p>
-            <div>
-                <img src="img/lucinda.jpg">
+    <section class="conatiner">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <img class="img-fluid p-3 popup" src="img/img1.jpg">
+                    <h2> LAPTOP</h2>
+                </div>
             </div>
-
-        </aside>
-        <div class="row p-3">
-            <div class="col-md-6">
-                <img src="http://picsum.photos/306/207">
+            <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <img class="img-fluid p-3 popup" src="img/img2.jpg">
+                    <h2>TYPING</h2>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="http://picsum.photos/303/201">
-            </div>
-        </div>
-        <div class="row p-3">
-            <div class="col-md-6">
-                <img src="http://picsum.photos/301/200">
-            </div>
-            <div class="col-md-6">
-                <img src="http://picsum.photos/301/200">
+            <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <img class="img-fluid p-3 popup" src="img/img3.jpg">
+                    <h2>VIEW</h2>
+                </div>
             </div>
         </div>
-        <div class="text-center">
-            <button class="btn btn-warning" data-row="1" data-max="3">See MORE</button>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mylargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <img  class="w-100 h-75" id="popup-img" src="" alt=img>
+                </div>
+            </div>
         </div>
     </section>
     <div id="div1">
@@ -90,6 +91,7 @@
         <a href="#"><i class="fa fa-arrow-up"></i></a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/tut2.js"></script>
 </body>
 

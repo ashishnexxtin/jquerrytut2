@@ -15,4 +15,13 @@ $(document).ready(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+     $('img').click(function(){
+     	var src = $(this).attr('src');
+        $('.modal').modal('show');
+        $('#popup-img').attr ('src', src);
+
+
+
+    });
+
 });
