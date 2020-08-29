@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     });
     $("#div5").click(function() {
-        $("div6").slideToggle();
+        $("#div6").slideToggle();
     });
 
     $('#scrollToTop a').click(function(e) {
@@ -15,11 +15,10 @@ $(document).ready(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-     $('img').click(function(){
-     	var src = $(this).attr('src');
+    $('.popup').click(function() {
+        var src = $(this).attr('src');
         $('.modal').modal('show');
-        $('#popup-img').attr ('src', src);
-
+        $('#popup-img').attr('src', src);
 
 
     });
