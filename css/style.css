@@ -2,6 +2,10 @@
      margin: 0px;
      padding: 0px;
      box-sizing: border-box;
+      
+ }
+ body{
+ 	overflow-x: hidden;
  }
 
  .top-bar li {
@@ -11,50 +15,21 @@
 
  }
 
- aside {
-     width: 40%;
-     padding-left: 15px;
-     margin-left: 15px;
-     float: right;
-     font-style: italic;
-     height: 512px;
-     text-align: center;
-     color: white;
- }
-
  .top-bar {
-     margin-left: -77px;
-     padding: 30px;
-     margin: -8px 0px;
+     position: absolute;
+    top: 10px;
+    margin-left: 170px;
  }
 
  .top-bar li a {
-     color: black;
-     font-size: 20px;
+     color: white;
+     font-size: 30px;
      text-decoration: none;
+     font-family: 'Anton', sans-serif; 
  }
 
  .p-3 img {
      border: 3px solid grey;
- }
-
- #scrollToTop {
-     border: 1px solid grey;
-     border-radius: 50%;
-     background: tomato;
-     width: 50px;
-     height: 50px;
-     position: fixed;
-     right: 10px;
-     bottom: 10px;
- }
-
- #scrollToTop a {
-     color: white;
-     font-size: 24px;
-     position: relative;
-     top: 6px;
-     left: 14px;
  }
 
  #div1,
@@ -76,8 +51,8 @@
      text-align: center;
  }
 
- img {
-     border-radius: 40px;
+ .row img {
+     border-radius: 20px;
  }
  .sortable{
  	list-style-type: none;
@@ -99,4 +74,85 @@
  	margin-left: -172px;
  	   
  }
+ .d-block {
+ 	height: 500px;
+ }
+ .bg-secondar {
+ 	height :400px;
+ 	text-align: center;
+ 	padding-top: 90px;
+ 	background-image: url(img/img1.jpg);
+ }
+ header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.desc {
+	text-align: center;
+}
+.chat-holder {
+	border:2px solid black;
+	border-radius: 4px;
+	background-color: grey;
+	width:250px;
+	text-align: center;
+	float: right;
+}
+.chat-body {
+	height:300px;
+}
+.chat-box {
+	display: none;
+}
+.chat-header{
+	border-bottom: 2px solid black;
+	background-color: black;
+	color: white;
+}
+#enter {
+	border-radius: 7px;
+	border:2px solid black;
+	width: 248px;
+}
+div.chat-holder{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
 

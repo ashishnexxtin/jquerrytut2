@@ -10,17 +10,20 @@ $(document).ready(function() {
         $("#div6").slideToggle();
     });
 
-    $('#scrollToTop a').click(function(e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
 
     $('.popup').click(function() {
         var src = $(this).attr('src');
         $('.modal').modal('show');
         $('#popup-img').attr('src', src);
+    });
+
+    $('.chat-header').click(function() {
+    	$('.chat-box').slideToggle();
+
 
 
     });
+
+
 
 });
